@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<smile version="1.0" id="Network1" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="Flegmatyk">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Melancholik">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Choleryk">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Sangwinik">
+			<state id="True" />
+			<state id="False" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="CharakterEkstrawertyczny">
+			<state id="True" />
+			<state id="False" />
+			<parents>Flegmatyk Melancholik Choleryk Sangwinik</parents>
+			<probabilities>0.5 0.5 0.25 0.75 0.25 0.75 0 1 0.75 0.25 0.5 0.5 0.5 0.5 0.25 0.75 0.75 0.25 0.5 0.5 0.5 0.5 0.25 0.75 1 0 0.75 0.25 0.75 0.25 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="CharakterIntrowertyczny">
+			<state id="True" />
+			<state id="False" />
+			<parents>Flegmatyk Melancholik Choleryk Sangwinik</parents>
+			<probabilities>0.5 0.5 0.75 0.25 0.75 0.25 1 0 0.25 0.75 0.5 0.5 0.5 0.5 0.75 0.25 0.25 0.75 0.5 0.5 0.5 0.5 0.75 0.25 0 1 0.25 0.75 0.25 0.75 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="DOM">
+			<state id="True" />
+			<state id="False" />
+			<parents>CharakterEkstrawertyczny CharakterIntrowertyczny</parents>
+			<probabilities>0.5 0.5 0.9 0.09999999999999998 0.1 0.9 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="DOS">
+			<state id="True" />
+			<state id="False" />
+			<parents>CharakterEkstrawertyczny CharakterIntrowertyczny</parents>
+			<probabilities>0.5 0.5 0.99 0.01000000000000001 0.01 0.99 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="SYS">
+			<state id="True" />
+			<state id="False" />
+			<parents>CharakterEkstrawertyczny CharakterIntrowertyczny</parents>
+			<probabilities>0.5 0.5 0.3 0.7 0.7 0.3 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Neurotycznosc">
+			<state id="True" />
+			<state id="False" />
+			<parents>Flegmatyk Melancholik Choleryk Sangwinik</parents>
+			<probabilities>0.5 0.5 0.75 0.25 0.25 0.75 0.5 0.5 0.25 0.75 0.5 0.5 0 1 0.25 0.75 0.75 0.25 1 0 0.5 0.5 0.75 0.25 0.5 0.5 0.75 0.25 0.25 0.75 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="RownowagaEmocjonalna">
+			<state id="True" />
+			<state id="False" />
+			<parents>Flegmatyk Melancholik Choleryk Sangwinik</parents>
+			<probabilities>0.5 0.5 0.25 0.75 0.75 0.25 0.5 0.5 0.75 0.25 0.5 0.5 1 0 0.75 0.25 0.25 0.75 0 1 0.5 0.5 0.25 0.75 0.5 0.5 0.25 0.75 0.75 0.25 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Zrownowazony">
+			<state id="True" />
+			<state id="False" />
+			<parents>SYS Neurotycznosc RownowagaEmocjonalna</parents>
+			<probabilities>0.66 0.34 0.33 0.6699999999999999 1 0 0.66 0.34 0.66 0.34 0 1 0.66 0.34 0.34 0.6599999999999999</probabilities>
+		</cpt>
+		<cpt id="MAK">
+			<state id="True" />
+			<state id="False" />
+			<parents>CharakterEkstrawertyczny CharakterIntrowertyczny</parents>
+			<probabilities>0.5 0.5 0.99 0.01 0.01 0.99 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="MIN">
+			<state id="True" />
+			<state id="False" />
+			<parents>CharakterEkstrawertyczny CharakterIntrowertyczny</parents>
+			<probabilities>0.5 0.5 0.01 0.99 0.99 0.01000000000000001 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="ASE">
+			<state id="True" />
+			<state id="False" />
+			<parents>CharakterEkstrawertyczny CharakterIntrowertyczny</parents>
+			<probabilities>0.5 0.5 0.1 0.9 0.9 0.09999999999999998 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="HOJ">
+			<state id="True" />
+			<state id="False" />
+			<parents>CharakterEkstrawertyczny CharakterIntrowertyczny</parents>
+			<probabilities>0.5 0.5 0.8 0.2 0.2 0.8 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="EMP">
+			<state id="True" />
+			<state id="False" />
+			<parents>CharakterEkstrawertyczny CharakterIntrowertyczny</parents>
+			<probabilities>0.5 0.5 0.8 0.2 0.2 0.8 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Apatyczny">
+			<state id="True" />
+			<state id="False" />
+			<parents>MIN RownowagaEmocjonalna Neurotycznosc MAK</parents>
+			<probabilities>0.5 0.5 0.75 0.25 0.25 0.75 0.5 0.5 0.75 0.25 1 0 0.5 0.5 0.75 0.25 0.25 0.75 0.5 0.5 0 1 0.25 0.75 0.5 0.5 0.75 0.25 0 1 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Refleksyjny">
+			<state id="True" />
+			<state id="False" />
+			<parents>Neurotycznosc RownowagaEmocjonalna</parents>
+			<probabilities>0.5 0.5 0.85 0.15 0.15 0.85 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Pesymistyczny">
+			<state id="True" />
+			<state id="False" />
+			<parents>MAK MIN ASE</parents>
+			<probabilities>0.6 0.4 0.5 0.5 0.3 0.7 0 1 1 0 0.7 0.3 0.6 0.4 0.2 0.8</probabilities>
+		</cpt>
+		<cpt id="Nietowarzyski">
+			<state id="True" />
+			<state id="False" />
+			<parents>Neurotycznosc RownowagaEmocjonalna</parents>
+			<probabilities>0.5 0.5 0.65 0.35 0.35 0.65 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Spokojny">
+			<state id="True" />
+			<state id="False" />
+			<parents>Neurotycznosc RownowagaEmocjonalna</parents>
+			<probabilities>0.5 0.5 0.55 0.45 0.45 0.55 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Ostrozny">
+			<state id="True" />
+			<state id="False" />
+			<parents>DOM DOS ASE</parents>
+			<probabilities>0.67 0.33 0.33 0.6699999999999999 0.33 0.6699999999999999 0 1 1 0 0.66 0.34 0.66 0.34 0.33 0.6699999999999999</probabilities>
+		</cpt>
+		<cpt id="Powazny">
+			<state id="True" />
+			<state id="False" />
+			<parents>DOS DOM</parents>
+			<probabilities>0.5 0.5 1 0 0 1 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Solidny">
+			<state id="True" />
+			<state id="False" />
+			<parents>SYS</parents>
+			<probabilities>1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Lagodny">
+			<state id="True" />
+			<state id="False" />
+			<parents>Neurotycznosc RownowagaEmocjonalna</parents>
+			<probabilities>0.5 0.5 0.05000000000000004 0.95 0.95 0.05000000000000004 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Wladczy">
+			<state id="True" />
+			<state id="False" />
+			<parents>DOM DOS Neurotycznosc RownowagaEmocjonalna</parents>
+			<probabilities>0.5 0.5 0.05 0.95 0.95 0.05 0.5 0.5 0.99 0.01 0.7 0.3 1 0 0.8 0.2 0.01 0.99 0 1 0.6 0.4 0.05 0.95 0.5 0.5 0.05 0.95 0.95 0.05 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Beztroski">
+			<state id="True" />
+			<state id="False" />
+			<parents>Neurotycznosc RownowagaEmocjonalna</parents>
+			<probabilities>0.5 0.5 0.13 0.87 0.87 0.13 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Niefrasobliwy">
+			<state id="True" />
+			<state id="False" />
+			<parents>EMP Neurotycznosc RownowagaEmocjonalna</parents>
+			<probabilities>0.7 0.3 0.33 0.67 1 0 0.8 0.2 0.25 0.75 0 1 0.5 0.5 0.2 0.8</probabilities>
+		</cpt>
+		<cpt id="Wrazliwy">
+			<state id="True" />
+			<state id="False" />
+			<parents>EMP</parents>
+			<probabilities>1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Otwarty">
+			<state id="True" />
+			<state id="False" />
+			<parents>HOJ EMP</parents>
+			<probabilities>1 0 0.9 0.1 0.9 0.1 0 1</probabilities>
+		</cpt>
+		<cpt id="Towarzyski">
+			<state id="True" />
+			<state id="False" />
+			<parents>HOJ EMP</parents>
+			<probabilities>1 0 0.9 0.09999999999999998 0.9 0.09999999999999998 0 1</probabilities>
+		</cpt>
+		<cpt id="Aktywny">
+			<state id="True" />
+			<state id="False" />
+			<parents>DOM MAK</parents>
+			<probabilities>1 0 0.9 0.09999999999999998 0.9 0.09999999999999998 0 1</probabilities>
+		</cpt>
+		<cpt id="Optymistyczny">
+			<state id="True" />
+			<state id="False" />
+			<parents>MAK</parents>
+			<probabilities>1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Impulsywny">
+			<state id="True" />
+			<state id="False" />
+			<parents>Neurotycznosc RownowagaEmocjonalna</parents>
+			<probabilities>0.5 0.5 0.67 0.33 0.33 0.67 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Inspirujacy">
+			<state id="True" />
+			<state id="False" />
+			<parents>Neurotycznosc RownowagaEmocjonalna</parents>
+			<probabilities>0.5 0.5 0.74 0.26 0.26 0.74 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Wybuchowy">
+			<state id="True" />
+			<state id="False" />
+			<parents>Neurotycznosc RownowagaEmocjonalna</parents>
+			<probabilities>0.5 0.5 0.8100000000000001 0.19 0.19 0.8100000000000001 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Agresywny">
+			<state id="True" />
+			<state id="False" />
+			<parents>Neurotycznosc RownowagaEmocjonalna</parents>
+			<probabilities>0.5 0.5 0.88 0.12 0.12 0.88 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Drazliwy">
+			<state id="True" />
+			<state id="False" />
+			<parents>Neurotycznosc RownowagaEmocjonalna</parents>
+			<probabilities>0.5 0.5 0.95 0.05000000000000004 0.05000000000000004 0.95 0.5 0.5</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.0.5590.0" name="Network1" faultnameformat="nodestate">
+			<node id="Flegmatyk">
+				<name>Flegmatyk</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>515 39 635 103</position>
+			</node>
+			<node id="Melancholik">
+				<name>Melancholik</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>744 37 864 101</position>
+			</node>
+			<node id="Choleryk">
+				<name>Choleryk</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>949 33 1069 97</position>
+			</node>
+			<node id="Sangwinik">
+				<name>Sangwinik</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1161 42 1281 106</position>
+			</node>
+			<node id="CharakterEkstrawertyczny">
+				<name>Charakter Ekstrawertyczny</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>307 233 466 325</position>
+			</node>
+			<node id="CharakterIntrowertyczny">
+				<name>Charakter Introwertyczny</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>605 240 764 332</position>
+			</node>
+			<node id="DOM">
+				<name>DOM</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>240 417 304 462</position>
+			</node>
+			<node id="DOS">
+				<name>DOS</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>319 418 381 460</position>
+			</node>
+			<node id="Neurotycznosc">
+				<name>Neurotycznosc</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>988 241 1126 326</position>
+			</node>
+			<node id="RownowagaEmocjonalna">
+				<name>Rownowaga Emocjonalna</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1265 239 1404 328</position>
+			</node>
+			<node id="MAK">
+				<name>MAK</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>394 417 460 460</position>
+			</node>
+			<node id="MIN">
+				<name>MIN</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>472 416 536 461</position>
+			</node>
+			<node id="ASE">
+				<name>ASE</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>553 417 617 462</position>
+			</node>
+			<node id="HOJ">
+				<name>HOJ</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>626 419 690 464</position>
+			</node>
+			<node id="SYS">
+				<name>SYS</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>700 418 764 463</position>
+			</node>
+			<node id="EMP">
+				<name>EMP</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>783 418 847 463</position>
+			</node>
+			<node id="Apatyczny">
+				<name>Apatyczny</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1093 628 1157 673</position>
+			</node>
+			<node id="Refleksyjny">
+				<name>Refleksyjny</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1228 635 1292 680</position>
+			</node>
+			<node id="Pesymistyczny">
+				<name>Pesymistyczny</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>169 639 233 684</position>
+			</node>
+			<node id="Nietowarzyski">
+				<name>Nietowarzyski</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1296 635 1360 680</position>
+			</node>
+			<node id="Spokojny">
+				<name>Spokojny</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1366 635 1430 680</position>
+			</node>
+			<node id="Ostrozny">
+				<name>Ostrozny</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>239 640 303 685</position>
+			</node>
+			<node id="Powazny">
+				<name>Powazny</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>308 640 372 685</position>
+			</node>
+			<node id="Solidny">
+				<name>Solidny</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>379 640 443 685</position>
+			</node>
+			<node id="Zrownowazony">
+				<name>Zrownowazony</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>951 629 1015 674</position>
+			</node>
+			<node id="Lagodny">
+				<name>Lagodny</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1434 637 1498 682</position>
+			</node>
+			<node id="Wladczy">
+				<name>Wladczy</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>884 630 948 675</position>
+			</node>
+			<node id="Beztroski">
+				<name>Beztroski</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1502 636 1566 681</position>
+			</node>
+			<node id="Niefrasobliwy">
+				<name>Niefrasobliwy</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1020 629 1084 674</position>
+			</node>
+			<node id="Wrazliwy">
+				<name>Wrazliwy</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>449 640 513 685</position>
+			</node>
+			<node id="Otwarty">
+				<name>Otwarty</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>518 643 582 688</position>
+			</node>
+			<node id="Towarzyski">
+				<name>Towarzyski</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>589 645 653 690</position>
+			</node>
+			<node id="Aktywny">
+				<name>Aktywny</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>660 644 724 689</position>
+			</node>
+			<node id="Optymistyczny">
+				<name>Optymistyczny</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>733 644 797 689</position>
+			</node>
+			<node id="Impulsywny">
+				<name>Impulsywny</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1570 637 1634 682</position>
+			</node>
+			<node id="Inspirujacy">
+				<name>Inspirujacy</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1639 639 1703 684</position>
+			</node>
+			<node id="Wybuchowy">
+				<name>Wybuchowy</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1709 638 1773 683</position>
+			</node>
+			<node id="Agresywny">
+				<name>Agresywny</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1779 638 1843 683</position>
+			</node>
+			<node id="Drazliwy">
+				<name>Drazliwy</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1848 635 1912 680</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>
