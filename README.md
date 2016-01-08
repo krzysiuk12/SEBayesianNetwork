@@ -13,4 +13,4 @@
 3. Build project.
 4. Open Terminal window.
 5. Go to ${PROJECT_PATH}/out/artifacts.
-6. Enter command: java -Djava.library.path="PATH/TO/jSMILE" -jar SEBayesianNetwork.jar
+6. Enter command: java -Djava.library.path="PATH/TO/jSMILE" -jar SEBayesianNetwork.jar (Path To jSMILE is path to directory that contains jsmile.dll and smile.jar, not to jar file itself)
